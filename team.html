@@ -1,0 +1,319 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB MAx</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/bootsrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="theme_realtor__header">
+      <nav class="navbar navbar-expand-md p-0">
+        <div class="container">
+          <a class="navbar-brand me-0" href="/"
+            ><img src="./assets/images/Logo.svg" alt="logo" class="img-fluid"
+          /></a>
+          <div class="">
+            <ul
+              class="navbar-nav ms-auto mb-lg-0 flex-row gap-1 gap-md-3 align-items-center"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-semibold text_dark me-md-3 poppins"
+                  href="#"
+                  ><img
+                    src="./assets/images/phonehe.svg"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                  (308) 123-3456</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link theme_realtor__header__btn bg_dark text-white rounded-pill proximanova text-capitalize"
+                  >get started</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="theme_realtor__hero padding_80">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="bg_grey border-24 theme_realtor__hero__content">
+              <h1
+                class="theme_realtor__hero__title text_dark fw-bold text-capitalize"
+              >
+                Let’s Find You a Loan Officer
+              </h1>
+              <p class="text_grey theme_realtor__hero__desc">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo.
+              </p>
+
+              <div class="input-group theme_realtor__hero__content__input">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search by loan officer name"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+                <span class="input-group-text" id="basic-addon1"
+                  ><button class="theme_realtor__btn-primary shadow-none">
+                    Search
+                  </button></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="theme_realtor__hero__img border-24">
+              <img
+                src="./assets/images/teamright.png"
+                alt="theme_realtor__hero"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme_realtor__agents pt_60">
+      <div class="container">
+        <h3 class="text-start fit-content">Agents in your area</h3>
+        <div
+          class="row justify-content-md-between justify-content-center align-items-center theme_realtor__agents__select__wrapper"
+        >
+          <div class="col-md-6">
+            <p class="text_dark">
+              <strong>6</strong> of <strong>12</strong> agents in
+              <strong>Fallbrook, CA</strong>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="theme_realtor__agents__select__wrapper__right d-flex align-items-center gap-1 justify-content-md-end"
+            >
+              <p class="text_dark">Sort :</p>
+              <select
+                class="form-select shadow-none outline-none border-0 fw-semibold"
+                aria-label="Default select example"
+              >
+                <option selected>Recommended</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gx-20 gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="theme_realtor__agents__card border-16 p-3">
+              <div class="theme_realtor__agents__card__img mb-3">
+                <img
+                  src="./assets/images/agent1.png"
+                  alt="agent"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="theme_realtor__agents__card__content">
+                <h4 class="fw-semibold mb-2 text_darklight">John Smith</h4>
+                <p class="text_grey pb-1">Loan Officer</p>
+
+                <div
+                  class="row gx-lg-1 gx-3 theme_realtor__agents__card__content__stats mt-3"
+                >
+                  <div
+                    class="col theme_realtor__agents__card__content__stats__box"
+                  >
+                    <p class="value fw-bold text_dark">$200M+</p>
+                    <p class="label">Sales</p>
+                  </div>
+                  <div
+                    class="col theme_realtor__agents__card__content__stats__box"
+                  >
+                    <p class="value fw-bold text_dark">222</p>
+                    <p class="label">Total Deal</p>
+                  </div>
+                  <div
+                    class="col theme_realtor__agents__card__content__stats__box"
+                  >
+                    <p class="value fw-bold text_dark">
+                      4.5 <img src="./assets/images/icons/Star.png" alt="" />
+                    </p>
+                    <p class="label">Avg Rating</p>
+                  </div>
+                </div>
+
+                <div
+                  class="theme_realtor__agents__card__contactinfo d-flex flex-column flex-md-row justify-content-between"
+                >
+                  <div
+                    class="theme_realtor__agents__card__contactinfo__contactitem d-flex align-items-center"
+                  >
+                    <img
+                      src="./assets/images/icons/phoneicon.png"
+                      alt="phoneicon"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      class="img-fluid me-2"
+                    />
+                    <a href="tel:00000000" class="text_grey">000-000-0000</a>
+                  </div>
+                  <div
+                    class="theme_realtor__agents__card__contactinfo__contactitem d-flex align-items-center"
+                  >
+                    <img
+                      src="./assets/images/icons/msgiocn.png"
+                      alt="phoneicon"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      class="img-fluid me-2"
+                    />
+                    <a href="mailto: wade@email.com" class="text_grey">
+                      wade@email.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <a
+                href=""
+                class="theme_realtor__btn-outline-primary w-100 shadow-none mt-4"
+              >
+                contect</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="theme_realtor__footer padding_40 proximanova">
+      <div class="container">
+        <div class="row gy-3 gy-md-0">
+          <div class="col-md-3">
+            <img
+              src="./assets/images/whitelogo.svg"
+              class="img-fluid mb-2"
+              alt="footer logo"
+            />
+            <p class="mt-1">
+              Quis autem vel eum iure reprehenderit qui in ea voluptat quam
+              nihil amor molestiae consequatu.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Site</p>
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#">Service</a>
+              </li>
+              <li class="mb-3">
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">team</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Contact</p>
+
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#" class="theme_realtor__footer__mail"
+                  >hello@companyname.com</a
+                >
+              </li>
+              <li class="mb-3">
+                <p>123 Demo Street, New York, NY 12345</p>
+              </li>
+              <li>
+                <a href="#">(000) 000-0000</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Legal</p>
+
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Term & Condition</a>
+              </li>
+            </ul>
+
+            <p class="text-white mt-4 pt-2">Social</p>
+            <ul
+              class="list-unstyled ps-0 mt-3 d-flex align-items-center theme_realtor__footer__social"
+            >
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitefaceboook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitetwiter.svg " alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitelinkdin.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="theme_realtor__footer__bottom">
+          <div class="row gy-3 gy-md-0">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-2">PRIVACY POLICY | NMLS CONSUMER ACCES</p>
+              <p class="mb-2">
+                {Company Name}, LLC is a forward-thinking mortgage brokerage
+                dedicated to simplifying the home financing process by offering
+                tailored lending solutions for homebuyers, investors, and
+                self-employed individuals. We leverage advanced technology and
+                personalized service to deliver a seamless lending experience
+              </p>
+              <p>
+                Copyright © 2025 | Clearview Lending Solutions | NMLS #2647763
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <img
+                src="./assets/images/Group.png"
+                class="img-fluid mt-4"
+                alt="grop img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+</html>

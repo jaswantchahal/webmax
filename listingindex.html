@@ -1,0 +1,579 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB MAx</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/bootsrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="theme_realtor__header">
+      <nav class="navbar navbar-expand-md p-0">
+        <div class="container">
+          <a class="navbar-brand me-0" href="/"
+            ><img src="./assets/images/Logo.svg" alt="logo" class="img-fluid"
+          /></a>
+          <div class="">
+            <ul
+              class="navbar-nav ms-auto mb-lg-0 flex-row gap-1 gap-md-3 align-items-center"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-semibold text_dark me-md-3 poppins"
+                  href="#"
+                  ><img
+                    src="./assets/images/phonehe.svg"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                  (308) 123-3456</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link theme_realtor__header__btn bg_dark text-white rounded-pill proximanova text-capitalize"
+                  >get started</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section
+      class="theme_realtor__brandhero bg_dark_90 text-white padding_60"
+      style="
+        background-image: url(./assets/images/backgrounds/brandhero_bg.png);
+      "
+    >
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="theme_realtor__brandhero__associatebox">
+              <div class="theme_realtor__brandhero__associatebox__img">
+                <img
+                  src="./assets/images/agent1.png"
+                  class="img-fluid"
+                  alt=" agent img"
+                />
+              </div>
+              <div
+                class="theme_realtor__brandhero__associatebox__detail text-center"
+              >
+                <h5
+                  class="theme_realtor__brandhero__associatebox__detail__title mb-2 fw-bold"
+                >
+                  Charlote Charoline
+                </h5>
+                <h4 class="text-white mb-2">Sales Associate</h4>
+                <div
+                  class="d-flex theme_realtor__brandhero__associatebox__detail__wraper mt_32 justify-content-center gap-3"
+                >
+                  <div
+                    class="d-flex theme_realtor__brandhero__associatebox__detail__wraper__contact border-end border-2 pe-3"
+                  >
+                    <img
+                      src="./assets/images/icons/phone.svg"
+                      alt="pnohe icon"
+                    />
+                    <a href="tel:480 591 7525" class="text-white"
+                      >480 591 7525</a
+                    >
+                  </div>
+
+                  <div
+                    class="d-flex theme_realtor__brandhero__associatebox__detail__wraper__contact"
+                  >
+                    <img src="./assets/images/icons/env.svg" alt="env icon" />
+                    <a href="mailto:email@.mailcom" class="text-white"
+                      >email@mail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="theme_realtor__featurelistings padding_100 pb-0">
+      <div class="container">
+        <h3 class="text-start">Our properties feature listings</h3>
+        <ul
+          class="nav nav-tabs border-0 theme_realtor__featurelistings__tabs"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="all-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#all-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="all-tab-pane"
+              aria-selected="true"
+            >
+              <img src="./assets/images/icons/tabscheck.svg" alt="" /> All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="residential-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#residential-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="residential-tab-pane"
+              aria-selected="false"
+            >
+              <img src="./assets/images/icons/tabscheck.svg" alt="" />
+              Residential
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="commercial-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#commercial-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="commercial-tab-pane"
+              aria-selected="false"
+            >
+              <img src="./assets/images/icons/tabscheck.svg" alt="" />
+              commercial
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="land-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#land-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="land-tab-pane"
+              aria-selected="false"
+            >
+              <img src="./assets/images/icons/tabscheck.svg" alt="" /> Land
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content padding_60" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="all-tab-pane"
+            role="tabpanel"
+            aria-labelledby="all-tab"
+            tabindex="0"
+          >
+            <div class="row gx-20 gy-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="theme_realtor__featurelistings__card">
+                  <div class="theme_realtor__featurelistings__card__img">
+                    <img
+                      src="./assets/images/property1.png"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      class="img-fluid"
+                      alt="featurelisting img"
+                    />
+                    <h4 class="fw-bold">WILDWOOD, NJ</h4>
+                  </div>
+                  <div class="theme_realtor__featurelistings__card__content">
+                    <p
+                      class="text_grey theme_realtor__featurelistings__card__content__address mb-1"
+                    >
+                      430 E 24TH AVE #D
+                    </p>
+                    <p
+                      class="text_dark fw-bold theme_realtor__featurelistings__card__content__price mb-2"
+                    >
+                      $769,900
+                    </p>
+                    <p
+                      class="text_grey mt-1 theme_realtor__featurelistings__card__content__desc"
+                    >
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <div
+                    class="theme_realtor__featurelistings__card__proppertydetail d-flex gap-2"
+                  >
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img src="./assets/images/icons/bed.svg" alt=" icon" />
+                      <p>3 Bed</p>
+                      <span>|</span>
+                    </div>
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img
+                        src="./assets/images/icons/bathtub.svg"
+                        alt=" icon"
+                      />
+                      <p>2 Bathroom</p>
+                      <span>|</span>
+                    </div>
+
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img src="./assets/images/icons/sqft.svg" alt=" icon" />
+                      <p>1,488 sqft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat similar blocks for other properties -->
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="residential-tab-pane"
+            role="tabpanel"
+            aria-labelledby="residential-tab"
+            tabindex="0"
+          >
+            <div class="row gx-20 gy-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="theme_realtor__featurelistings__card">
+                  <div class="theme_realtor__featurelistings__card__img">
+                    <img
+                      src="./assets/images/property1.png"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      class="img-fluid"
+                      alt="featurelisting img"
+                    />
+                    <h4 class="fw-bold">HADDON TOWNSHIP, NJ</h4>
+                  </div>
+                  <div class="theme_realtor__featurelistings__card__content">
+                    <p
+                      class="text_grey theme_realtor__featurelistings__card__content__address mb-1"
+                    >
+                      430 E 24TH AVE #D
+                    </p>
+                    <p
+                      class="text_dark fw-bold theme_realtor__featurelistings__card__content__price mb-2"
+                    >
+                      $769,900
+                    </p>
+                    <p
+                      class="text_grey mt-1 theme_realtor__featurelistings__card__content__desc"
+                    >
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <div
+                    class="theme_realtor__featurelistings__card__proppertydetail d-flex gap-2"
+                  >
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img src="./assets/images/icons/bed.svg" alt=" icon" />
+                      <p>3 Bed</p>
+                      <span>|</span>
+                    </div>
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img
+                        src="./assets/images/icons/bathtub.svg"
+                        alt=" icon"
+                      />
+                      <p>2 Bathroom</p>
+                      <span>|</span>
+                    </div>
+
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img src="./assets/images/icons/sqft.svg" alt=" icon" />
+                      <p>1,488 sqft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat similar blocks for other properties -->
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="commercial-tab-pane"
+            role="tabpanel"
+            aria-labelledby="commercial-tab"
+            tabindex="0"
+          >
+            <div class="row gx-20 gy-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="theme_realtor__featurelistings__card">
+                  <div class="theme_realtor__featurelistings__card__img">
+                    <img
+                      src="./assets/images/property1.png"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      class="img-fluid"
+                      alt="featurelisting img"
+                    />
+                    <h4 class="fw-semibold">CHERRY HILL, NJ</h4>
+                  </div>
+                  <div class="theme_realtor__featurelistings__card__content">
+                    <p
+                      class="text_grey theme_realtor__featurelistings__card__content__address mb-1"
+                    >
+                      430 E 24TH AVE #D
+                    </p>
+                    <p
+                      class="text_dark fw-bold theme_realtor__featurelistings__card__content__price mb-2"
+                    >
+                      $769,900
+                    </p>
+                    <p
+                      class="text_grey mt-1 theme_realtor__featurelistings__card__content__desc"
+                    >
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <div
+                    class="theme_realtor__featurelistings__card__proppertydetail d-flex gap-2"
+                  >
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img src="./assets/images/icons/bed.svg" alt=" icon" />
+                      <p>3 Bed</p>
+                      <span>|</span>
+                    </div>
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img
+                        src="./assets/images/icons/bathtub.svg"
+                        alt=" icon"
+                      />
+                      <p>2 Bathroom</p>
+                      <span>|</span>
+                    </div>
+
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img src="./assets/images/icons/sqft.svg" alt=" icon" />
+                      <p>1,488 sqft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat similar blocks for other properties -->
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="land-tab-pane"
+            role="tabpanel"
+            aria-labelledby="land-tab"
+            tabindex="0"
+          >
+            <div class="row gx-20 gy-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="theme_realtor__featurelistings__card">
+                  <div class="theme_realtor__featurelistings__card__img">
+                    <img
+                      src="./assets/images/property1.png"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      class="img-fluid"
+                      alt="featurelisting img"
+                    />
+                    <h4 class="fw-semibold">SEWELL, NJ</h4>
+                  </div>
+                  <div class="theme_realto__featurelistings__card__content">
+                    <p
+                      class="text_grey theme_realtor__featurelistings__card__content__address mb-1"
+                    >
+                      430 E 24TH AVE #D
+                    </p>
+                    <p
+                      class="text_dark fw-bold theme_realtor__featurelistings__card__content__price mb-2"
+                    >
+                      $769,900
+                    </p>
+                    <p
+                      class="text_grey mt-1 theme_realtor__featurelistings__card__content__desc"
+                    >
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <div
+                    class="theme_realtor__featurelistings__card__proppertydetail d-flex gap-2"
+                  >
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img src="./assets/images/icons/bed.svg" alt=" icon" />
+                      <p>3 Bed</p>
+                      <span>|</span>
+                    </div>
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img
+                        src="./assets/images/icons/bathtub.svg"
+                        alt=" icon"
+                      />
+                      <p>2 Bathroom</p>
+                      <span>|</span>
+                    </div>
+
+                    <div
+                      class="d-flex gap-2 align-items-center theme_realtor__featurelistings__card__proppertydetail__inner"
+                    >
+                      <img src="./assets/images/icons/sqft.svg" alt=" icon" />
+                      <p>1,488 sqft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat similar blocks for other properties -->
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center pb-0">
+          <button class="theme_realtor__btn-outline-primary">View More</button>
+        </div>
+      </div>
+    </section>
+    <footer class="theme_realtor__footer padding_40 proximanova">
+      <div class="container">
+        <div class="row gy-3 gy-md-0">
+          <div class="col-md-3">
+            <img
+              src="./assets/images/whitelogo.svg"
+              class="img-fluid mb-2"
+              alt="footer logo"
+            />
+            <p class="mt-1">
+              Quis autem vel eum iure reprehenderit qui in ea voluptat quam
+              nihil amor molestiae consequatu.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Site</p>
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#">Service</a>
+              </li>
+              <li class="mb-3">
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">team</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Contact</p>
+
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#" class="theme_realtor__footer__mail"
+                  >hello@companyname.com</a
+                >
+              </li>
+              <li class="mb-3">
+                <p>123 Demo Street, New York, NY 12345</p>
+              </li>
+              <li>
+                <a href="#">(000) 000-0000</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Legal</p>
+
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Term & Condition</a>
+              </li>
+            </ul>
+
+            <p class="text-white mt-4 pt-2">Social</p>
+            <ul
+              class="list-unstyled ps-0 mt-3 d-flex align-items-center theme_realtor__footer__social"
+            >
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitefaceboook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitetwiter.svg " alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitelinkdin.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="theme_realtor__footer__bottom">
+          <div class="row gy-3 gy-md-0">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-2">PRIVACY POLICY | NMLS CONSUMER ACCES</p>
+              <p class="mb-2">
+                {Company Name}, LLC is a forward-thinking mortgage brokerage
+                dedicated to simplifying the home financing process by offering
+                tailored lending solutions for homebuyers, investors, and
+                self-employed individuals. We leverage advanced technology and
+                personalized service to deliver a seamless lending experience
+              </p>
+              <p>
+                Copyright © 2025 | Clearview Lending Solutions | NMLS #2647763
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <img
+                src="./assets/images/Group.png"
+                class="img-fluid mt-4"
+                alt="grop img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+</html>

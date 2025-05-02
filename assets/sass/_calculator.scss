@@ -1,0 +1,139 @@
+.theme_realtor {
+  &__mortgagesolutions {
+    &__box {
+      padding: 32px;
+      transition: all 0.3s ease-in-out;
+      border: 2px solid transparent;
+      &:hover {
+        border: 2px solid $border-color;
+      }
+      p {
+        max-width: 80%;
+      }
+    }
+  }
+  &__contact {
+    .subheading {
+      margin: 0 auto;
+
+      max-width: 600px;
+    }
+  }
+  &__calculatorsec {
+    &__left {
+      padding: 60px;
+      @media screen and (max-width: 768px) {
+        padding: 20px;
+      }
+      select {
+        border-radius: 8px;
+        border: none;
+        box-shadow: none !important;
+        outline: none;
+        font-size: 18px;
+        padding: 14px;
+      }
+
+      .input-group {
+        input {
+          padding-left: 0;
+          border-radius: 8px;
+          border: none;
+          box-shadow: none;
+          outline: none;
+          font-size: 18px;
+          &::placeholder {
+            color: $placeholder_color;
+          }
+        }
+        .input-group-text {
+          font-size: 18px;
+          color: $placeholder_color;
+          padding: 14px;
+          border-radius: 8px;
+          border: none;
+          background: #fff;
+        }
+      }
+    }
+
+    &__right {
+      &__box {
+        margin-top: 20px;
+        padding: 60px;
+        @media screen and (max-width: 768px) {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  &__calfeatures {
+    &__box {
+      transition: all 0.3s ease-in-out;
+    }
+    &__col {
+      &:nth-child(1) {
+        .theme_realtor__calfeatures__box {
+          background-color: #fcf2ec;
+          border: 2px solid transparent;
+          &:hover {
+            border: 2px solid #e58246;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .theme_realtor__calfeatures__box {
+          background-color: #eaeffd;
+          border: 2px solid transparent;
+          &:hover {
+            border: 2px solid #c3ceeb;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .theme_realtor__calfeatures__box {
+          background-color: #edfbf1;
+          border: 2px solid transparent;
+          &:hover {
+            border: 2px solid #c7e9d0;
+          }
+        }
+      }
+    }
+  }
+  &__faq {
+    .accordion {
+      .accordion-item {
+        .accordion-button {
+          background: none;
+          color: #2e66f6;
+          font-weight: 600;
+          font-size: 22px;
+          &::after {
+            background-image: url("../images/icons/accimg.svg");
+            transition: transform 0.2s ease-in-out;
+            transform: rotate(-180deg);
+          }
+          &.collapsed {
+            color: #263238;
+            &::after {
+              transform: rotate(-360deg);
+              background-image: url("../images/icons/accimg2.svg");
+              background-size: contain;
+            }
+          }
+        }
+        .accordion-body {
+          color: $text_grey;
+        }
+      }
+    }
+  }
+  &__mortgagesteps {
+    &__circle {
+     width: 32px;
+     height: 32px;
+    }
+  }
+}

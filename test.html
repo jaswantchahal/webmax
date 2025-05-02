@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://via.placeholder.com/400x200?text=Slide+1"
+            alt="Slide 1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://via.placeholder.com/400x200?text=Slide+2"
+            alt="Slide 2"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://via.placeholder.com/400x200?text=Slide+3"
+            alt="Slide 3"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </body>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      speed: 500,
+    });
+  </script>
+</html>

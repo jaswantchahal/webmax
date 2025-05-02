@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB MAx</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/bootsrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="theme_realtor__header">
+      <nav class="navbar navbar-expand-md p-0">
+        <div class="container">
+          <a class="navbar-brand me-0" href="/"
+            ><img src="./assets/images/Logo.svg" alt="logo" class="img-fluid"
+          /></a>
+          <div class="">
+            <ul
+              class="navbar-nav ms-auto mb-lg-0 flex-row gap-1 gap-md-3 align-items-center"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-semibold text_dark me-md-3 poppins"
+                  href="#"
+                  ><img
+                    src="./assets/images/phonehe.svg"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                  (308) 123-3456</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link theme_realtor__header__btn bg_dark text-white rounded-pill proximanova text-capitalize"
+                  >get started</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container theme_realtor__header__breadcrumb">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </div>
+    <section class="theme_realtor__calculatorsec padding_60">
+      <div class="container">
+        <form action="">
+          <div class="row g-20">
+            <div class="col-lg-6">
+  1            <div class="theme_realtor__calculatorsec__left border-24 bg_grey">
+                <h1 class="mb-4">Monthly payment calculator</h1>
+                <p class="mb-4">
+                  Estimate your monthly mortgage payment, including principal,
+                  interest, taxes, and insurance. Compare different loan terms
+                  now.
+                </p>
+                <div class="row align-items-center gx-0 gy-3">
+                  <div class="col-md-6">
+                    <p class="text_dark fs_16 fw-medium">Price of Home</p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">$</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="400,000"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="text_dark fs_16 fw-medium">Loan Amount</p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">$</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="320.00"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="text_dark fs_16 fw-medium">Loan Term</p>
+                  </div>
+                  <div class="col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>years</option>
+                      <option value="1">30 Years</option>
+                      <option value="2">20 Years</option>
+                      <option value="3">10 Years</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="text_dark fs_16 fw-medium">Interest Rate</p>
+                  </div>
+                  <div class="col-md-3 ms-auto">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control ps-3 text-end"
+                        placeholder="5.00"
+                      />
+                      <span class="input-group-text" id="basic-addon1">%</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="text_dark fs_16 fw-medium">Property Taxes</p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">$</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="2,000.00"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-1">
+                    <p class="text_dark fs_16 fw-medium">
+                      Homeowners Insurance
+                    </p>
+                  </div>
+                  <div class="col-md-6 mb-1">
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">$</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="2,000.00"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12 mx-auto mt-3 mt-md-5">
+                    <a href="" class="theme_realtor__btn-primary w-100"
+                      >Calculate</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="theme_realtor__calculatorsec__right">
+                <img
+                  src="./assets/images/chartimg.png"
+                  class="img-fluid"
+                  alt="chart img"
+                />
+
+                <div
+                  class="theme_realtor__calculatorsec__right__box bg_grey border-24"
+                >
+                  <h4>We have loan officer here</h4>
+                  <div class="d-flex gap-4 mt-4 mb-md-3">
+                    <div>
+                      <img
+                        src="/assets/images/mortgagexpert.png"
+                        class="img-fluid mortgageexpert h_100 object-fit-cover"
+                        alt="mortgage expert"
+                        loading="lazy"
+                        importance="low"
+                        decoding="async"
+                      />
+                    </div>
+                    <div>
+                      <h5 class="fs_20 color_2020 fw-semibold">Rachel Adams</h5>
+                      <p class="fs_16 mt-2 mb-3 fw-medium color_5959">
+                        Mortgage Expert
+                      </p>
+                      <div
+                        class="d-flex flex-column flex-md-row justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center me-3 border-1 border-right pe-3"
+                        >
+                          <img
+                            src="./assets/images/icons/phoneicon.png"
+                            alt="phoneicon"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            class="img-fluid me-2"
+                          />
+                          <a href="tel:00000000" class="color_5959 fw-medium"
+                            >480 591 7525</a
+                          >
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="./assets/images/icons/msgiocn.png"
+                            alt="phoneicon"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            class="img-fluid me-2"
+                          />
+                          <a
+                            href="mailto: wade@email.com"
+                            class="color_5959 fw-medium"
+                          >
+                            wade@email.com</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href=""
+                    class="theme_realtor__btn-outline-primary shadow-none mt-4"
+                    >Get Expert Advice</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="padding_60 theme_realtor__calfeatures">
+      <div class="container">
+        <h3>Ut enim ad minim veniam</h3>
+        <div class="row pt_60">
+          <div class="col-md-4 theme_realtor__calfeatures__col">
+            <div class="border-24 theme_realtor__calfeatures__box padding_32">
+              <img
+                src="./assets/images/icons/houseicon.svg"
+                class="img-fluid mb-4"
+                alt="house icon"
+              />
+              <h4 class="text_dark mb-2 fw-semibold">Feature 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-4 theme_realtor__calfeatures__col">
+            <div class="border-24 theme_realtor__calfeatures__box padding_32">
+              <img
+                src="./assets/images/icons/houseicon.svg"
+                class="img-fluid mb-4"
+                alt="house icon"
+              />
+              <h4 class="text_dark mb-2 fw-semibold">Feature 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-4 theme_realtor__calfeatures__col">
+            <div class="border-24 theme_realtor__calfeatures__box padding_32">
+              <img
+                src="./assets/images/icons/houseicon.svg"
+                class="img-fluid mb-4"
+                alt="house icon"
+              />
+              <h4 class="text_dark mb-2 fw-semibold">Feature 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg_grey padding_100 theme_realtor__faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-4 text-start text_dark">
+              Frequently asked questions
+            </h3>
+
+            <p class="fs-5">You can also get help from our expert.</p>
+            <div class="d-flex gap-4 mt-4 mb-md-2 align-items-center">
+              <div>
+                <img
+                  src="/assets/images/mortgagexpert.png"
+                  class="img-fluid mortgageexpert h_100 object-fit-cover"
+                  alt="mortgage expert"
+                  loading="lazy"
+                  importance="low"
+                  decoding="async"
+                />
+              </div>
+              <div>
+                <h5 class="fs_20 color_2020 fw-semibold">Rachel Adams</h5>
+
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between mt-3"
+                >
+                  <div
+                    class="d-flex align-items-center me-3 border-1 border-right pe-3"
+                  >
+                    <img
+                      src="./assets/images/icons/phoneicon.png"
+                      alt="phoneicon"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      class="img-fluid me-2"
+                    />
+                    <a href="tel:00000000" class="color_5959 fs_16 fw-medium"
+                      >480 591 7525</a
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="./assets/images/icons/msgiocn.png"
+                      alt="phoneicon"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      class="img-fluid me-2"
+                    />
+                    <a
+                      href="mailto: wade@email.com"
+                      class="color_5959 fw-medium fs_16"
+                    >
+                      wade@email.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="theme_realtor__btn-primary shadow-none mt-4"
+              >Get Expert Advice</a
+            >
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion" id="faqaccordians">
+              <div class="accordion-item mb-3 border-0">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqone"
+                    aria-expanded="true"
+                    aria-controls="faqone"
+                  >
+                    How is my monthly mortgage payment calculated?
+                  </button>
+                </h2>
+                <div
+                  id="faqone"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqaccordians"
+                >
+                  <div class="accordion-body">
+                    Your monthly mortgage payment includes principal (the amount
+                    borrowed), interest (the cost of borrowing), property taxes,
+                    homeowners insurance, and, if applicable, private mortgage
+                    insurance (PMI). The calculator estimates your total payment
+                    based on these factors.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-3 border-0">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button shadow-none collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqtwo"
+                    aria-expanded="false"
+                    aria-controls="faqtwo"
+                  >
+                    What factors affect my mortgage payment?
+                  </button>
+                </h2>
+                <div
+                  id="faqtwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqaccordians"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="padding_100 theme_realtor__mortgagesteps pb-0">
+      <div class="container">
+        <h3 class="pb_60">When you’re ready to get started</h3>
+        <div class="row g-20 mb-2">
+          <div class="col-md-4">
+            <div class="bg_grey border-24 padding_32">
+              <div 
+                class=" theme_realtor__mortgagesteps__circle bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+               
+              >
+                <strong>1</strong>
+              </div>
+              <h4 class="text_dark mt-3 mb-2 fw-semibold">Apply online</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <a href="" class="theme_realtor__btn-primary mt_32 mx-auto d-block fit-content">Get Started</a>
+      </div>
+    </section>
+    <footer class="theme_realtor__footer padding_40 proximanova">
+      <div class="container">
+        <div class="row gy-3 gy-md-0">
+          <div class="col-md-3">
+            <img
+              src="./assets/images/whitelogo.svg"
+              class="img-fluid mb-2"
+              alt="footer logo"
+            />
+            <p class="mt-1">
+              Quis autem vel eum iure reprehenderit qui in ea voluptat quam
+              nihil amor molestiae consequatu.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Site</p>
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#">Service</a>
+              </li>
+              <li class="mb-3">
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">team</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Contact</p>
+
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#" class="theme_realtor__footer__mail"
+                  >hello@companyname.com</a
+                >
+              </li>
+              <li class="mb-3">
+                <p>123 Demo Street, New York, NY 12345</p>
+              </li>
+              <li>
+                <a href="#">(000) 000-0000</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="text-white">Legal</p>
+
+            <ul class="list-unstyled ps-0 mt-3 mb-0">
+              <li class="mb-3">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Term & Condition</a>
+              </li>
+            </ul>
+
+            <p class="text-white mt-4 pt-2">Social</p>
+            <ul
+              class="list-unstyled ps-0 mt-3 d-flex align-items-center theme_realtor__footer__social"
+            >
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitefaceboook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitetwiter.svg " alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="" class=""
+                  ><img src="./assets/images/whitelinkdin.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="theme_realtor__footer__bottom">
+          <div class="row gy-3 gy-md-0">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-2">PRIVACY POLICY | NMLS CONSUMER ACCES</p>
+              <p class="mb-2">
+                {Company Name}, LLC is a forward-thinking mortgage brokerage
+                dedicated to simplifying the home financing process by offering
+                tailored lending solutions for homebuyers, investors, and
+                self-employed individuals. We leverage advanced technology and
+                personalized service to deliver a seamless lending experience
+              </p>
+              <p>
+                Copyright © 2025 | Clearview Lending Solutions | NMLS #2647763
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <img
+                src="./assets/images/Group.png"
+                class="img-fluid mt-4"
+                alt="grop img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+</html>

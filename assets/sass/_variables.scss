@@ -1,0 +1,281 @@
+$bg_grey: #f6f7f8;
+$bg_dark: #202043;
+$text_grey: #7a7a7a;
+$text_white: #ffffff;
+$text_white_70: rgba(255, 255, 255, 0.7);
+$text_dark: #212121;
+$text_darklight: #121212;
+$border_color: #e58246;
+$text_primary_dark: #b26537;
+$bg_dark_90: rgba(32, 32, 67, 0.9);
+$border_grey: #dfe2eb;
+$placeholder_color: #9b9b9b;
+$foooter_bg: #0d111a;
+$color_2020: #202020;
+$color_5959: #595959;
+
+.border-right {
+  border-right: 1px solid $placeholder_color;
+}
+
+@media screen and (max-width: 768px) {
+  .border-right {
+    border-right: none;
+  }
+}
+
+@mixin text_elpsis($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  line-clamp: $line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin custom-button(
+  $bg-color,
+  $text-color,
+  $border-color: null,
+  $is-outline: false
+) {
+  border: if($is-outline, 1px solid $border-color !important, none !important);
+  background-color: if($is-outline, transparent !important, $bg-color);
+  color: if($is-outline, $border-color !important, $text-color);
+  font-size: 16px;
+  padding: 13px 32px;
+  display: inline-block;
+  border-radius: 12px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  min-width: 250px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:not(.btn-check) + &.btn:active {
+    background-color: $bg-color;
+    color: $text-color;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+}
+// btns start
+.theme_realtor {
+  &__btn-primary {
+    @include custom-button($border_color, $text_white);
+    text-transform: capitalize;
+  }
+  &__btn-outline-primary {
+    @include custom-button($border_color, $text_white, $border_color, true);
+  }
+}
+
+// btns end
+
+.color_2020 {
+  color: $color_2020;
+}
+.fit-content {
+  width: fit-content;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.mt_32 {
+  margin-top: 20px;
+}
+
+.subheading {
+  font-size: 20px;
+}
+
+.h_100 {
+  min-height: 100%;
+}
+.g-20,
+.gy-20 {
+  --bs-gutter-y: 20px;
+}
+
+.g-20,
+.gx-20 {
+  --bs-gutter-x: 20px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding-left: 0;
+}
+
+.color_5959 {
+  color: $color_5959;
+}
+.text_dark {
+  color: $text_dark;
+}
+.text_darklight {
+  color: $text_darklight;
+}
+.text_grey {
+  color: $text_grey;
+}
+.bg_grey {
+  background-color: $bg_grey;
+}
+.bg_dark {
+  background-color: $bg_dark;
+}
+.bg_dark_90 {
+  background-color: $bg_dark_90;
+}
+
+.border-16 {
+  border-radius: 16px;
+}
+.border-12 {
+  border-radius: 12px;
+}
+.border-24 {
+  border-radius: 16px;
+}
+p {
+  color: $text_grey;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: $text_dark;
+}
+h4 {
+  color: $text_dark;
+  font-size: 18px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 52px;
+  }
+}
+
+.padding_30 {
+  padding: 30px 0px;
+}
+.padding_32 {
+  padding: 32px;
+}
+.padding_60 {
+  padding: 30px 0px;
+}
+.pb_60 {
+  padding-bottom: 30px;
+}
+.pt_60 {
+  padding-top: 30px;
+}
+.padding_80 {
+  padding: 40px 0px;
+}
+.padding_100 {
+  padding: 50px 0px;
+}
+
+.fs_16 {
+  font-size: 16px;
+}
+.fs_32 {
+  font-size: 20px;
+}
+.fs_20 {
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .fs_32 {
+    font-size: 32px;
+  }
+  .mt_32 {
+    margin-top: 32px;
+  }
+  .border-24 {
+    border-radius: 24px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  .padding_30 {
+    padding: 30px 0px;
+  }
+  .padding_60 {
+    padding: 60px 0px;
+  }
+  .pt_60 {
+    padding-top: 60px;
+  }
+  .pb_60 {
+    padding-bottom: 60px;
+  }
+  .padding_80 {
+    padding: 80px 0px;
+  }
+  .padding_100 {
+    padding: 100px 0px;
+  }
+}
+.circle__arrow-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: $border_color;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}

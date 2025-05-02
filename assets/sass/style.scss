@@ -1,0 +1,146 @@
+@import "variables";
+@import "cobrand";
+@import "team";
+@import "home";
+@import "calculator";
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "proximanova";
+  src: url("../fonts/ProximaNova-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proximanova";
+  src: url("../fonts/ProximaNovaSemibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proximanova";
+  src: url("../fonts/ProximaNovaBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.proximanova {
+  font-family: "proximanova", sans-serif;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.theme_realtor {
+  &__header {
+    background-color: $text_white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    padding: 18px 0;
+
+    a {
+      font-size: 16px;
+    }
+    &__btn {
+      padding: 10px 20px !important;
+    }
+    @media screen and (max-width: 768px) {
+      .navbar-brand {
+        max-width: 130px;
+        img {
+          max-width: 120px;
+        }
+      }
+      a {
+        font-size: 14px;
+      }
+      &__btn {
+        padding: 6px 16px !important;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      a {
+        font-size: 12px;
+        img {
+          max-width: 16px;
+        }
+      }
+    }
+  }
+  &__footer {
+    background-color: $foooter_bg;
+    padding: 40px 55px;
+    margin-top: 50px;
+    @media screen and (min-width: 768px) {
+      margin-top: 100px;
+    }
+    &__mail {
+      @include text_elpsis(1);
+    }
+
+    &__social {
+      gap: 28px;
+      li {
+        a {
+          background-color: rgba(255, 255, 255, 0.2);
+          height: 36px;
+          width: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+        }
+      }
+    }
+    &__bottom {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      p {
+        font-size: 12px !important;
+      }
+    }
+    a,
+    p {
+      color: $text_white_70;
+      font-size: 16px;
+      letter-spacing: -0.16px;
+    }
+    a {
+      text-transform: capitalize;
+    }
+  }
+  &__header__breadcrumb {
+    margin-top: 40px;
+
+    .breadcrumb {
+      .breadcrumb-item {
+        a {
+          color: $text_grey;
+        }
+        &.active {
+          color: $text_dark;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.theme_realtor__ready + .theme_realtor__footer {
+  margin-top: 0;
+}
+img {
+  &.mortgageexpert {
+    border-radius: 8px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+
+
+
