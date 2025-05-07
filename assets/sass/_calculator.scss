@@ -1,7 +1,7 @@
 .theme_realtor {
   &__mortgagesolutions {
     &__box {
-      padding: 32px;
+      padding: 24px;
       transition: all 0.3s ease-in-out;
       border: 2px solid transparent;
       &:hover {
@@ -9,6 +9,9 @@
       }
       p {
         max-width: 80%;
+      }
+      @media screen and (min-width: 768px) {
+        padding: 32px;
       }
     }
   }
@@ -42,6 +45,7 @@
           box-shadow: none;
           outline: none;
           font-size: 18px;
+          color: $text_dark;
           &::placeholder {
             color: $placeholder_color;
           }
@@ -61,6 +65,14 @@
       &__box {
         margin-top: 20px;
         padding: 60px;
+        @media screen and (max-width: 1400px) {
+          .border-right {
+            border-right: none;
+          }
+        }
+        @media screen and (max-width: 992px) {
+          padding: 30px;
+        }
         @media screen and (max-width: 768px) {
           padding: 20px;
         }
@@ -103,13 +115,19 @@
     }
   }
   &__faq {
+    margin-top: 40px;
+
     .accordion {
       .accordion-item {
+        border-radius: 8px !important;
+
         .accordion-button {
+          padding: 30px;
           background: none;
           color: #2e66f6;
           font-weight: 600;
           font-size: 22px;
+
           &::after {
             background-image: url("../images/icons/accimg.svg");
             transition: transform 0.2s ease-in-out;
@@ -125,15 +143,28 @@
           }
         }
         .accordion-body {
+          padding: 30px;
           color: $text_grey;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+      .accordion {
+        .accordion-item {
+          .accordion-body,
+          .accordion-button {
+            padding: 20px 14px;
+            font-size: 18px;
+          }
         }
       }
     }
   }
   &__mortgagesteps {
     &__circle {
-     width: 32px;
-     height: 32px;
+      width: 32px;
+      height: 32px;
     }
   }
 }

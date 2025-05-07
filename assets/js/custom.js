@@ -23,20 +23,20 @@ const organizationsSwiper = new Swiper(".organizationsSlider", {
 
 const customersReviewSwiper = new Swiper(".customersReviewSlider", {
   loop: true,
-  speed: 4000,
+  speed: 1000,
   slidesPerView: 1,
   spaceBetween: 20,
   autoplay: {
-    delay: 1000, 
+    delay: 1000,
     disableOnInteraction: false,
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',   
-    prevEl: '.swiper-button-prev',   
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     768: {
@@ -50,5 +50,3 @@ const customersReviewSwiper = new Swiper(".customersReviewSlider", {
     },
   },
 });
-
-

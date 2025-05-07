@@ -62,9 +62,9 @@
         <form action="">
           <div class="row g-20">
             <div class="col-lg-6">
-  1            <div class="theme_realtor__calculatorsec__left border-24 bg_grey">
+              <div class="theme_realtor__calculatorsec__left border-24 bg_grey">
                 <h1 class="mb-4">Monthly payment calculator</h1>
-                <p class="mb-4">
+                <p class="mb-4 fs_20">
                   Estimate your monthly mortgage payment, including principal,
                   interest, taxes, and insurance. Compare different loan terms
                   now.
@@ -117,7 +117,7 @@
                     <div class="input-group">
                       <input
                         type="text"
-                        class="form-control ps-3 text-end"
+                        class="form-control ps-3 text-md-end"
                         placeholder="5.00"
                       />
                       <span class="input-group-text" id="basic-addon1">%</span>
@@ -152,8 +152,8 @@
                     </div>
                   </div>
                   <div class="col-md-12 mx-auto mt-3 mt-md-5">
-                    <a href="" class="theme_realtor__btn-primary w-100"
-                      >Calculate</a
+                    <button class="theme_realtor__btn-primary w-100"
+                      >Calculate</button
                     >
                   </div>
                 </div>
@@ -161,12 +161,13 @@
             </div>
             <div class="col-lg-6">
               <div class="theme_realtor__calculatorsec__right">
-                <img
-                  src="./assets/images/chartimg.png"
-                  class="img-fluid"
-                  alt="chart img"
-                />
-
+                <div class="text-center">
+                  <img
+                    src="./assets/images/chartimg.png"
+                    class="img-fluid"
+                    alt="chart img"
+                  />
+                </div>
                 <div
                   class="theme_realtor__calculatorsec__right__box bg_grey border-24"
                 >
@@ -184,11 +185,11 @@
                     </div>
                     <div>
                       <h5 class="fs_20 color_2020 fw-semibold">Rachel Adams</h5>
-                      <p class="fs_16 mt-2 mb-3 fw-medium color_5959">
+                      <p class="fs_16 mt-2 mb-2 mb-md-3 fw-medium color_5959">
                         Mortgage Expert
                       </p>
                       <div
-                        class="d-flex flex-column flex-md-row justify-content-between"
+                        class="d-flex flex-column flex-xxl-row justify-content-between"
                       >
                         <div
                           class="d-flex align-items-center me-3 border-1 border-right pe-3"
@@ -238,9 +239,9 @@
     </section>
     <section class="padding_60 theme_realtor__calfeatures">
       <div class="container">
-        <h3>Ut enim ad minim veniam</h3>
-        <div class="row pt_60">
-          <div class="col-md-4 theme_realtor__calfeatures__col">
+        <h3 class="mb-md-3 mb-2">Ut enim ad minim veniam</h3>
+        <div class="row pt_60 g-20">
+          <div class="col-md-6 col-lg-4 theme_realtor__calfeatures__col">
             <div class="border-24 theme_realtor__calfeatures__box padding_32">
               <img
                 src="./assets/images/icons/houseicon.svg"
@@ -251,7 +252,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="col-md-4 theme_realtor__calfeatures__col">
+          <div class="col-md-6 col-lg-4 theme_realtor__calfeatures__col">
             <div class="border-24 theme_realtor__calfeatures__box padding_32">
               <img
                 src="./assets/images/icons/houseicon.svg"
@@ -262,7 +263,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="col-md-4 theme_realtor__calfeatures__col">
+          <div class="col-md-6 col-lg-4 theme_realtor__calfeatures__col">
             <div class="border-24 theme_realtor__calfeatures__box padding_32">
               <img
                 src="./assets/images/icons/houseicon.svg"
@@ -279,9 +280,9 @@
 
     <section class="bg_grey padding_100 theme_realtor__faq">
       <div class="container">
-        <div class="row">
+        <div class="row gy-4">
           <div class="col-lg-6">
-            <h3 class="fw-bold mb-4 text-start text_dark">
+            <h3 class="fw-bold mb-2 mb-md-4 text-start text_dark">
               Frequently asked questions
             </h3>
 
@@ -412,9 +413,8 @@
         <div class="row g-20 mb-2">
           <div class="col-md-4">
             <div class="bg_grey border-24 padding_32">
-              <div 
-                class=" theme_realtor__mortgagesteps__circle bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3"
-               
+              <div
+                class="theme_realtor__mortgagesteps__circle bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3"
               >
                 <strong>1</strong>
               </div>
@@ -422,8 +422,34 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="bg_grey border-24 padding_32">
+              <div
+                class="theme_realtor__mortgagesteps__circle bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+              >
+                <strong>2</strong>
+              </div>
+              <h4 class="text_dark mt-3 mb-2 fw-semibold">Get expert</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg_grey border-24 padding_32">
+              <div
+                class="theme_realtor__mortgagesteps__circle bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+              >
+                <strong>3</strong>
+              </div>
+              <h4 class="text_dark mt-3 mb-2 fw-semibold">Find your home</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
         </div>
-        <a href="" class="theme_realtor__btn-primary mt_32 mx-auto d-block fit-content">Get Started</a>
+        <a
+          href=""
+          class="theme_realtor__btn-primary mt_32 mx-auto d-block fit-content"
+          >Get Started</a
+        >
       </div>
     </section>
     <footer class="theme_realtor__footer padding_40 proximanova">
@@ -443,10 +469,10 @@
           <div class="col-md-3">
             <p class="text-white">Site</p>
             <ul class="list-unstyled ps-0 mt-3 mb-0">
-              <li class="mb-3">
+              <li class="mb-md-3 mb-2">
                 <a href="#">Service</a>
               </li>
-              <li class="mb-3">
+              <li class="mb-md-3 mb-2">
                 <a href="#">About us</a>
               </li>
               <li>
@@ -458,12 +484,12 @@
             <p class="text-white">Contact</p>
 
             <ul class="list-unstyled ps-0 mt-3 mb-0">
-              <li class="mb-3">
+              <li class="mb-md-3 mb-2">
                 <a href="#" class="theme_realtor__footer__mail"
                   >hello@companyname.com</a
                 >
               </li>
-              <li class="mb-3">
+              <li class="mb-md-3 mb-2">
                 <p>123 Demo Street, New York, NY 12345</p>
               </li>
               <li>
@@ -475,7 +501,7 @@
             <p class="text-white">Legal</p>
 
             <ul class="list-unstyled ps-0 mt-3 mb-0">
-              <li class="mb-3">
+              <li class="mb-md-3 mb-2">
                 <a href="#">Privacy Policy</a>
               </li>
               <li>

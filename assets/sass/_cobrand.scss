@@ -3,6 +3,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    background-image: url("../images/backgrounds/brandhero_bg.webp");
+    background-color: rgba(32, 32, 67, 0.9);
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(32, 32, 67, 0.9);
+    }
+
     &__associatebox {
       &__img {
         margin: 0 auto;
@@ -22,6 +35,14 @@
           width: 142px;
           height: 142px;
         }
+        @media screen and (max-width: 768px) {
+          width: 132px;
+          height: 132px;
+          img {
+            width: 124px;
+            height: 124px;
+          }
+        }
       }
       &__detail {
         &__title {
@@ -29,14 +50,113 @@
           font-size: 32px;
         }
         &__wraper {
-          @media screen and (max-width: 370px) {
+          @media screen and (max-width: 992px) {
             flex-direction: column;
             align-items: center;
           }
           &__contact {
-            @media screen and (max-width: 370px) {
+            a {
+              font-size: 22px;
+            }
+            @media screen and (max-width: 992px) {
+              border-right: 0px solid transparent !important;
+              a {
+                font-size: 16px;
+              }
+            }
+            img {
+              width: 24px;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+      &__socialicon__wraper {
+        margin-top: 20px;
+        &__icon {
+          height: 36px;
+          width: 36px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+  &__listing {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/backgrounds/brandhero_bg.webp");
+    background-color: rgba(32, 32, 67, 0.9);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(32, 32, 67, 0.54) 0%,
+        rgba(32, 32, 67, 0.9) 100%
+      );
+    }
+
+    &__associatebox {
+      z-index: 1;
+      position: relative;
+      &__img {
+        margin: 0 auto;
+        width: 148px;
+        height: 148px;
+        background-color: $text_white;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: top;
+          width: 142px;
+          height: 142px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 132px;
+          height: 132px;
+          img {
+            width: 124px;
+            height: 124px;
+          }
+        }
+      }
+      &__detail {
+        &__title {
+          letter-spacing: -0.64px;
+          font-size: 32px;
+          line-height: 54px;
+          @media screen and (max-width: 768px) {
+            line-height: 40px;
+            font-size: 26px;
+          }
+        }
+        &__wraper {
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+          }
+          &__contact {
+            font-size: 18px;
+            @media screen and (max-width: 768px) {
               border-right: 0px solid transparent !important;
             }
+           
             img {
               width: 24px;
               margin-right: 12px;
@@ -63,16 +183,13 @@
     @media (min-width: 992px) {
       padding: 100px 0;
     }
-    h3 {
-      margin-bottom: 30px;
-    }
+
     @media (min-width: 992px) {
       padding: 100px 0;
-      h3 {
-        margin-bottom: 60px;
-      }
     }
     &__card {
+      display: block;
+      text-decoration: none;
       border: 1px solid $border_grey;
       padding: 4px;
       border-radius: 8px;
@@ -93,7 +210,7 @@
           bottom: 8px;
           right: 8px;
           border-radius: 40px;
-          padding: 4px 12px;
+          padding: 6px 12px;
           width: fit-content;
           background-color: rgba(33, 33, 33, 0.6);
         }
@@ -111,11 +228,22 @@
         &__desc {
           @include text_elpsis(2);
         }
+        @media (min-width: 768px) and (max-width: 1200px) {
+          padding: 6px;
+        }
       }
       &__proppertydetail {
         padding: 12px;
+        @media (min-width: 768px) and (max-width: 1200px) {
+          padding: 6px;
+        }
         &__inner {
           @media screen and (max-width: 400px) {
+            p {
+              font-size: 12px;
+            }
+          }
+          @media (min-width: 768px) and (max-width: 1200px) {
             p {
               font-size: 12px;
             }
@@ -138,7 +266,7 @@
           border-radius: 50px;
           padding: 6px 16px;
           color: $text_grey;
-          border: 1px solid $text_grey;
+          border: 1px solid $border_grey8CC;
           display: flex;
           align-items: center;
           text-transform: capitalize;
@@ -158,6 +286,12 @@
           }
         }
       }
+    }
+  }
+  &__propertyrelated {
+    padding: 40px 0 60px 0;
+    @media screen and (max-width: 768px) {
+      padding: 20px 0 20px 0;
     }
   }
 }
